@@ -41,6 +41,29 @@ https://5000-cs-741144739238-default.cs-us-east1-rtep.cloudshell.dev/hello?name=
 ## 2. Azure API deployment:
 I deployed this through GCP because I do not have anymore Azure credits. In order to do this I followed the instructions that were present in the assignment.
 
+2. GCP Cloud Functions API deployment:
+I used this link to help me deploy. http function: https://cloud.google.com/functions/docs/create-deploy-http-python
+
+My first step was creating a repo in github which I named flask_6_api_management.
+
+I cloned that in my Google CLI.
+
+From here I made an main.py file,  and copied in the appropriate code from week6.
+Next I created a requirements.txt file which contained function_framework==3/*.
+
+From there I have to build and test the function locally, which I did by copying and pasting in pip install -r requirements.txt
+PATH=$PATH:~/.local/bin.
+
+Thankfully from here I was able to visit my function and again where I see the screenshot above
+
+URL:https://5000-cs-430379961417-default.cs-us-east1-rtep.cloudshell.dev/?authuser=1&redirectedPreviously=true
+<img width="710" alt="Screen Shot 2023-11-07 at 3 41 22 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/c9954ccb-89b1-4d26-9bb8-eaae85b5465a">
+
+Next we have to deploy the function:
+
+In order to do this I used a combination of the instructions given by google and also how to deploy an app present in HHA 504 week 2. 
+
+
 
 
 
