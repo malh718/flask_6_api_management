@@ -52,7 +52,7 @@ From here I made an main.py file,  and copied in the appropriate code from week6
 Next I created a requirements.txt file which contained function_framework==3/*.
 
 From there I have to build and test the function locally, which I did by copying and pasting in pip install -r requirements.txt
-PATH=$PATH:~/.local/bin.
+PATH=$PATH:~/.local/bin. and also with the function framwwork which is functions-framework-python --target-http
 
 Thankfully from here I was able to visit my function and again where I see the screenshot above
 
@@ -63,13 +63,34 @@ Next we have to deploy the function:
 
 In order to do this I used a combination of the instructions given by google and also how to deploy an app present in HHA 504 week 2. 
 
+At this point I had already had my cloud platform project and it was called flaskenddeploy with a project ID under the same  name.
+
+My next steps were:
+gcloud projects list
+gcloud config set project [Flaskenddeploy]
+
+*** It was at this point I realized I did not have a .yaml file so I created that and 
+made sure I was in the right directory which was flask_6_api_management
+
+<img width="1056" alt="Screen Shot 2023-11-07 at 4 24 15 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/dca40505-661d-415a-b871-3f3278941ea2">
+
+After that was completed I had to input gcloud app deploy, and it succesfully deployed on GCP.  As shown by a screenshot of the traffic below.
+
+<img width="1096" alt="Screen Shot 2023-11-07 at 3 20 22 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/b4c998df-ce71-43a4-80a3-3bb92df9911f">
 
 
+Errors deploying:
+
+At this point I ran into a couple of issues deploying on GCP.
+
+<img width="687" alt="Screen Shot 2023-11-07 at 4 28 26 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/5c84c088-1959-4918-88ee-908b21549d5f">
 
 
+Once I did app deploy it brought me to the choose the region where you are located, and I chose 18. Then when ERROR: (gcloud.app.deploy) PERMISSION_DENIED: The caller does not have permission
 
+I was really confused by this, and when I put that error into stackoverflow it said that I had to go into my Google Cloud and into the IAM and admin page. From here I went to grant access to my personal email which I have in my google CLI. However, no matter what I did or how many times I reloaded or tried to redeploy it would not work.
 
-
+<img width="817" alt="Screen Shot 2023-11-07 at 4 30 42 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/a03d6252-fb95-4ce9-a576-a9eec29f1f2f">
 
 
 
