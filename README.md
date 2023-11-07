@@ -6,7 +6,8 @@
 Utilize Flask to develop an endpoint that can handle a simple GET request.
 The response should be in JSON format. 
 
-As shown in the class example the format is https://jsonplaceholder.typicode.com/posts/1
+The class example the format is
+https://jsonplaceholder.typicode.com/posts/1
 
 As the screenshot shows, and endpoint was developed and a GET request was implemented as shown in the screenshot.
 
@@ -90,7 +91,42 @@ Once I did app deploy it brought me to the choose the region where you are locat
 
 I was really confused by this, and when I put that error into stackoverflow it said that I had to go into my Google Cloud and into the IAM and admin page. From here I went to grant access to my personal email which I have in my google CLI. However, no matter what I did or how many times I reloaded or tried to redeploy it would not work.
 
+At this point I switched into my stonybrookemail for the cloud shell , opened another tab with another google Cloud shell, cloned my github repo, and when I went to deploy the app there were no issues with permissions and it deployed succesfully as shown by the screenshot below. 
+
 <img width="817" alt="Screen Shot 2023-11-07 at 4 30 42 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/a03d6252-fb95-4ce9-a576-a9eec29f1f2f">
 
+
+## 3. OpenAPI Specification and Documentation:
+
+For the final step,I made sure to pip install flasgger and add the Swagger(app) line of code into my main.py file.
+I ran the requirements.txt file. pip install -r requirements.txt
+For this portion where you have to do the docstring documentation it is important that you have all your proper parameters set and to make sure the indentation is correct. It should look like this   """
+    This endpoint returns a greeting message.
+    ---
+    parameters:
+      - name: name
+        in: query
+        type: string
+        required: false
+        default: World
+    responses:
+      200:
+        description: A greeting message
+    """
+
+Docstring documentation file:
+<img width="993" alt="Screen Shot 2023-11-07 at 4 59 07 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/492aad0a-354b-4510-90d9-5e056c9ede5e">
+
+<img width="970" alt="Screen Shot 2023-11-07 at 5 01 41 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/794f0b83-e698-4551-bde6-f8dec023a042">
+
+<img width="950" alt="Screen Shot 2023-11-07 at 5 03 27 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/5c89699b-0266-4b4d-ac4e-87717dd2da43">
+
+<img width="959" alt="Screen Shot 2023-11-07 at 5 03 11 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/dc029448-9cd7-48b6-bfc7-0b4004323fcb">
+
+Potential errors for #3: 
+
+So initally this didnt work for me and I couldnt figure out what I was doing wrong. Turns out I was missing a part of the code and the spacing was off and that is why it showed me no operations. However, once I went back into my main.py and corrected everything it went through. 
+
+<img width="878" alt="Screen Shot 2023-11-07 at 5 07 53 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/7f495a2d-7844-463a-b4fa-c8ff1c4592bc">
 
 
