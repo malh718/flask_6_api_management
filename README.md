@@ -28,3 +28,14 @@ https://5000-cs-741144739238-default.cs-us-east1-rtep.cloudshell.dev/?authuser=0
 My code is shown in the screen shot below.
 
 <img width="972" alt="Screen Shot 2023-11-07 at 2 43 28 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/da969b71-6000-421e-b873-ee3f76041b50">
+
+This is the url when you change authuser to hello
+https://5000-cs-741144739238-default.cs-us-east1-rtep.cloudshell.dev/hello
+<img width="722" alt="Screen Shot 2023-11-07 at 2 55 52 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/b720b842-49c3-489b-a835-d9c803e9e430">
+
+This is the url and it shows the name " Hello Rameama " 
+In order to do this at the end of the URL after hello, i put ?name=rameama
+https://5000-cs-741144739238-default.cs-us-east1-rtep.cloudshell.dev/hello?name=rameama
+<img width="1170" alt="Screen Shot 2023-11-07 at 2 58 49 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/6fb76bcf-4c10-46e7-8c88-63fcb96c395d">
+
+
