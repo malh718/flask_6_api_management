@@ -38,6 +38,8 @@ In order to do this at the end of the URL after hello, i put ?name=rameama
 https://5000-cs-741144739238-default.cs-us-east1-rtep.cloudshell.dev/hello?name=rameama
 <img width="1170" alt="Screen Shot 2023-11-07 at 2 58 49 PM" src="https://github.com/malh718/flask_6_api_management/assets/102617334/6fb76bcf-4c10-46e7-8c88-63fcb96c395d">
 
+## 2. Azure API deployment:
+I deployed this through GCP because I do not have anymore Azure credits. In order to do this I followed the instructions that were present in the assignment.
 
 
 
